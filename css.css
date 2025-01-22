@@ -1,146 +1,151 @@
-/* Stile globale */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
+<style>
+        /* Adatta per risoluzione 1920x1080 */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
 
-/* Header con barra di ricerca */
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    z-index: 1000;
-}
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.search-bar input {
-    width: 70%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px 0 0 20px;
-}
-.search-bar button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #eee;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-}
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px 0 0 20px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #eee;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.hero img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.hero h1 {
-    font-size: 3rem;
-}
-.hero p {
-    font-size: 1.5rem;
-}
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
 
-/* Sezione citazione */
-.quote {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding: 50px 20px;
-}
-.quote img {
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(0.7);
-}
-.quote blockquote {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.2rem;
-    line-height: 1.8;
-    width: 80%;
-    color: white;
-}
+        .quote {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .quote img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+        .quote blockquote {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.8rem;
+            line-height: 2;
+            width: 80%;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
 
-/* Sezione autore */
-.author {
-    background-color: #f7f7f7;
-    padding: 50px 20px;
-    text-align: center;
-}
-.author-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-.author img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
+        .author {
+            background-color: #f7f7f7;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .author-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .author img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .author p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+            max-width: 800px;
+        }
 
-/* Sezione Data Visualization */
-.data-visualization {
-    text-align: center;
-    position: relative;
-}
-.data-visualization img {
-    width: 100%;
-    height: auto;
-}
-.visualization-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-}
+        .data-visualization {
+            position: relative;
+            text-align: center;
+        }
+        .data-visualization img {
+            width: 100%;
+            height: auto;
+        }
+        .visualization-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
 
-/* Sezione VJING */
-.vjing {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.vjing img {
-    width: 100%;
-    height: auto;
-}
-.vjing-text {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-.vjing button {
-    background-color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1rem;
-    cursor: pointer;
-}
+        .vjing {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .vjing img {
+            width: 100%;
+            height: auto;
+        }
+        .vjing-text {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1.5rem;
+        }
+        .vjing button {
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
